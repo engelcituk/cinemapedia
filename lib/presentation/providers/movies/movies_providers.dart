@@ -4,7 +4,7 @@ import 'package:cinemapedia/presentation/providers/movies/movies_repository_prov
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // la clase que lo controla MoviesNotifier y la data o state List<Movie> 
-final nowPlayingProviders = StateNotifierProvider <MoviesNotifier, List<Movie> > ((ref) {
+final nowPlayingMoviesProvider = StateNotifierProvider <MoviesNotifier, List<Movie> > ((ref) {
 
   final fetchMoreMovies = ref.watch(movieRepositoryProvider).getNowPlaying;
 
